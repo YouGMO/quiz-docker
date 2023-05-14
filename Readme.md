@@ -1,6 +1,6 @@
 # Quiz project
 
-Project to manage quiz question using a backend
+Our project aims to provide a comprehensive solution that combines the power of ReactJS and Spring Boot to create a robust and user-friendly web application. With ReactJS on the front-end, we can build dynamic and interactive user interfaces, while Spring Boot handles the server-side logic and provides a scalable and secure back-end infrastructure. MySQL is utilized as the database to store and manage the application's data efficiently.
 
 ## Prerequisites
 
