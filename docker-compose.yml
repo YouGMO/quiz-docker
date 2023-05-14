@@ -1,0 +1,23 @@
+version: '3.9'
+
+services:
+  frontend:
+    build: ./front-end # Build the frontend service from the Dockerfile in the ./frontend directory
+    ports:
+      - "3000:3000" # Map port 3000 on the host to port 3000 in the container
+  backend:
+    build: ./backend # Build the backend service from the Dockerfile in the ./backend directory
+    ports:
+      - "8080:8080" # Map port 8080 on the host to port 8080 in the container
+    depends_on:
+      - db # The backend service depends on the db service
+  db:
+    image: mysql:8.0 # Use the official MySQL 8.0 image from Docker Hub
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD:  # Set the root password for the MySQL server
+      MYSQL_DATABASE: qcmprojet # Set the name of the database to be created
+      MYSQL_USER: root # Set the username for the database user
+      MYSQL_PASSWORD: root # Set the password for the database user
+    ports:
+      - "3306:3306" # Map port 3306 on the host to port 3306 in the container

@@ -1,0 +1,420 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.MuiDrawer-root {
+  width: 240px;
+  flex-shrink: 0;
+}
+.MuiDrawer-paper {
+  width: 240px;
+}
+
+.main-content {
+  margin-left: 240px;
+}
+
+
+
+.sidebar-text {
+  color: #fff;
+  font-size: 16px;
+  font-family: "Calibri", sans-serif;
+}
+
+.sidebar-icon {
+  color: #fff;
+}
+
+.sidebar-selected {
+  border: 2px solid white;
+  background-color: white;
+}
+
+
+
+.countdown {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  width: 400px;
+}
+
+.countdown-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 3rem;
+  font-weight: bold;
+  color: #2c3e50;
+}
+
+.countdown-item-label {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #7f8c8d;
+  margin-top: 0.5rem;
+}
+
+
+
+.qcmDetail {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.text {
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.hide {
+  display: none;
+}
+
+.start-button {
+  margin-top: 2rem;
+}
+
+.start-button button {
+  font-size: 1.5rem;
+  padding: 1rem 2rem;
+  border-radius: 5px;
+}
+
+.qcm-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.qcm-question {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.qcm-choix {
+  font-size: 28px;
+  font-style: italic;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+
+.qcm-timer {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.qcm-reponses {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.qcm-reponse {
+  font-size: 18px;
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+.qcm-reponses li {
+  list-style: none;
+}
+
+.qcm-reponse:hover {
+  background-color: #f0f0f0;
+}
+
+.qcm-reponse.selected {
+  background-color: #007bff;
+  color: #fff;
+}
+.qcm-reponse span {
+  display: inline-block;
+  margin-left: 20px;
+}
+
+.qcm-finished {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.list-group-item {
+  background-color: #f0f0f0;
+}
+
+/* ESPACE STAGIAIRE */
+.stagiaire-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 50px;
+}
+
+.stagiaire-header {
+  background-color: #007bff;
+  color: white;
+  padding: 20px;
+  border-radius: 5px;
+}
+.stagiaire-header2 {
+  background-color: white;
+  color: black;
+  padding: 20px;
+  border-radius: 5px;
+  font-weight: bold;
+
+}
+
+.stagiaire-card {
+  margin-top: 30px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  max-width: 800px;
+  width: 100%;
+}
+
+.stagiaire-card-body {
+  padding: 20px;
+}
+
+.stagiaire-row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+}
+
+.col-12 {
+  width: 100%;
+}
+
+.col-md-6 {
+  width: 50%;
+}
+
+.stagiaire-label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.stagiaire-value {
+  margin: 0;
+}
+
+/* ESPACE ADMIN */
+.admin-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 50px;
+}
+
+.admin-header {
+  background-color: #007bff;
+  color: white;
+  padding: 20px;
+  border-radius: 5px;
+}
+.admin-header2 {
+  background-color: white;
+  color: black;
+  padding: 20px;
+  border-radius: 5px;
+  font-weight: bold;
+
+}
+
+.admin-card {
+  margin-top: 30px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  max-width: 800px;
+  width: 100%;
+}
+
+.admin-card-body {
+  padding: 20px;
+}
+
+.admin-row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+}
+
+.col-12 {
+  width: 100%;
+}
+
+.col-md-6 {
+  width: 50%;
+}
+
+.admin-label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.admin-value {
+  margin: 0;
+}
+
+/* RESULTAT */
+
+.resultat-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+
+.row {
+  margin: 0 -8px;
+}
+
+.col {
+  padding: 0 8px;
+}
+
+
+.font-weight-bold {
+  font-weight: bold;
+}
+
+.bg-light {
+  background-color: #f8f9fa !important;
+}
+
+.titre {
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-align: center;
+  margin: 2rem 0;
+  color: #333;
+}
+
+/* PAGE D'ACCUEIL */
+
+.home-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #f8f8f8;
+}
+
+.home-title {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #333;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.home-subtitle {
+  font-size: 1.5rem;
+  color: #666;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.home-image {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 2rem;
+}
+
+/* QCMLIST */
+
+.qcmlist-group {
+  list-style: none;
+  padding: 0;
+}
+
+.qcmlist-group-item {
+  background-color: #fff;
+  border: 1px solid #dee2e6;
+}
+
+.qcmlist-group-item:hover {
+  background-color: #f5f5f5;
+}
+
+.qcmlist-group-item a {
+  color: #000;
+  text-decoration: none;
+  display: block;
+  padding: 1rem;
+}
+
+.qcmlist-group-item a:hover {
+  color: #007bff;
+}
+
+.qcmlist-group-item div:first-child {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.qcmlist-group-item div:not(:first-child) {
+  font-size: 0.9rem;
+}
+
+.alert{
+  color: red;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+
+
+  
+}

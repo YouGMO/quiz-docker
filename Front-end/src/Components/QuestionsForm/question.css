@@ -1,0 +1,29 @@
+.question-list-container {
+    margin: 20px;
+  }
+  
+  .question-list-title {
+    font-size: 24px;
+  }
+  
+  .question-list {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+  }
+  
+  .question-item {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid black;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .question-text {
+    margin-right: 10px;
+    flex-grow: 1;
+  }
+  
